@@ -1,3 +1,6 @@
+# Covid Trackify - The one stop solution to everything and anything related to COVID-19
+The v0.1 of the website is live on https://covid-trackify.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
