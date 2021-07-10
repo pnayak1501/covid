@@ -9,7 +9,7 @@ const News = () =>{
   const [news, setNews] = useState([]);
   useEffect(() => {
     const getArticles = async () => {
-      const res = await axios.get("https://newsapi.org/v2/everything?q=covid&from=2021-07-01&sortBy=publishedAt&apiKey=fc78b843553d4413a4b36654a6619c7a");
+      const res = await axios.get("https://gnews.io/api/v4/search?q=covid&token=c6446612887099182e67f6b63d0581f1");
       setNews(res.data.articles);
     };
     getArticles();
@@ -26,7 +26,7 @@ return (
     <Row>
     {news.map(n => (
       <Col>
-      <NewsCard title={n.title} description={n.description} url={n.url} urlToImage={n.urlToImage} />
+      <NewsCard title={n.title} description={n.description} url={n.url} urlToImage={n.image} />
       </Col>
     ))}
     </Row>
