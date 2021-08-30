@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.main-heading{
+    margin-top: -60px;
+
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.container-fluid{
+    width: 10%;
+    margin: auto;
+    height: 10%;
+    
+   
+}
+
+.top{
+    background-color: black;
+    color: white;
+}
+
+.table-responsive{
+    max-height: 500px;
+    box-shadow: rgba(0,0,0, 0.25) 0px 25px 50px -12px;
+    margin-top: 50px;
+    
+}
+
+tr:hover{
+    background-color: #f2f2f2;
+}
+
+td,
+th{
+    position: relative;
+   /* color: white;*/
+}
+
+.table td,
+.table th{
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+td:hover::after,
+th:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    left: 0;
+    top:-5000px;
+    height: 5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.table tr td:hover:nth-child(4){
+    background-color: rgb(231, 83, 115);
+    color: aliceblue;
+    border: 0.5px solid rgb(12, 12, 12);
+}
+
+.table tr td:hover{
+    background-color: rgb(117, 223, 122);
+    color: aliceblue;
+    border: 0.5px solid rgb(12, 12, 12);
+}
+
+.thead-dark{
+    font-weight: bold;
+    text-transform: uppercase;
+}
